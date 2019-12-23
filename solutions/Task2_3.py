@@ -20,7 +20,7 @@ path_train = r'C:/Users/yarik/Downloads/input/train_v2/'
 path_test = r'C:/Users/yarik/Downloads/input/test_v2/'
 path_submission = r'C:/Users/yarik/Downloads/input/sample_submission_v2.csv'
 # number of images to choose
-IMG_NUM = 50
+IMG_NUM = 10
 # Printing what we have in our input folder:
 print(os.listdir(INPUT_PATH))
 # Any results you write to the current directory are saved as output.
