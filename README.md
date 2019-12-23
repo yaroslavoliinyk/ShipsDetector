@@ -13,30 +13,23 @@ This program allows you to detect the locations of ships. To interact with the s
 5. Extract the package
 6. Enter the following folder "*Downloads/ShipsDetector-master/solutions/*"
 7. Before launching the program you should change few parameters:
+	* Locatoin of training data
+	* Location of testing data
+	* Path to submission data
 >![chosen parameters](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/0.JPG)
-7. Then use: "*python Task2_3.py*"
+7. Then you can run program by using: "*python Task2_3.py*"
 8. Well done! The program is running.
 
 ### Interface and controlling
-* Firstly, the program suggests you to choose the level of your competitor.
-From 1 to 10 when 1 is **the weakest** competitor and 10 is **the strongest**
->![Choosing level of opponent](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/1.png)
-* Then the table will appear. Here, your checkers are represented as 'O', the enemy's are '@'
->![The table](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/2.png)
-* In order to make a move you need to type the position of the checker you want to move, for instance:
-'A3' - the very left checker.
-* After, you should write a position where you want to go. From 'A3' the only one move is to 'B4'.
-That's what we will write.
-It looks as following:
->![The move](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/3.png)
-* The table will affect the changes:
->![The changed table](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/4.png)
-* You need to wait until your opponent makes a move and you will proceed.
-Here's an opponent's move:
->![The move](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/5.png)
-* Then, you make a move again:
->![The move](https://raw.githubusercontent.com/yaroslavoliinyk/checkers_AI/master/pics/6.png)
-* **The game will end until *you* or *AI* bot wins.**
+* Firstly, you can see greetings and prgram asks you to choose picture number
+>![Greetings](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/1.JPG)
+* After choosing picture, you'll see the result of the used algorithm:
+>![result of the algorithm](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/2.JPG)
+* Now you can close that image and try another one. But be ready, that tere might be images with no ships in it. In that was you'll get the following:
+>![Warning](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/3.JPG)
+>![No ships picture](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/4.JPG)
+* You should be aware that you can change number of represented images in the following value: IMG_NUM. By default it equals 10. You can change it in Task2_3.py file.
+* **You can choose different photos until you press quit button**
 ### Have fun!
 
 		All rights reserved
