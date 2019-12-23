@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from imageio import imread
 
-from solutions.NoShipsException import NoShipsException
 # Input data files are available in the "../input/" directory.
 import matplotlib.pyplot as plt
 import os
@@ -41,7 +40,8 @@ def make_plt(ImageId):
             # decoding that masks with special function
             all_masks += rle_decode(mask)
             # if there are no ships on a mask Exception will be thrown and handled
-        except NoShipsException:
+        except Exception:
+            print('No ships on that picture! Choose another one')
             print('Please, choose picture:')
     # building plots with image, mask and image with mask
     fig, axarr = plt.subplots(1, 3, figsize=(15, 40))
@@ -64,7 +64,7 @@ def rle_decode(mask_rle, shape=(768, 768)):
     '''
     # if there are no ships 'NoShipsException' will be thrown
     if(str(mask_rle) == 'nan'):
-        raise NoShipsException
+        raise Exception('No ships on that picture! Choose another one')
     # Splitting this mask so we can fulfill it with another color
     s = mask_rle.split()
     # defining whether it's a start of pixels or length
