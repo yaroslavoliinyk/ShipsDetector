@@ -13,7 +13,7 @@ This program allows you to detect the locations of ships. To interact with the s
 5. Extract the package
 6. Enter the following folder "*Downloads/ShipsDetector-master/solutions/*"
 7. Before launching the program you should change few parameters:
->![chosen parameters](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/0.png)
+>![chosen parameters](https://raw.githubusercontent.com/yaroslavoliinyk/ShipsDetector/master/pics/0.JPG)
 7. Then use: "*python Task2_3.py*"
 8. Well done! The program is running.
 
