@@ -23,10 +23,12 @@ IMG_NUM = 10
 # Printing what we have in our input folder:
 print(os.listdir(INPUT_PATH))
 # Any results you write to the current directory are saved as output.
+'''
 train = os.listdir(path_train)
 print('train data', len(train), 'images')
 test = os.listdir(path_test)
 print('test data', len(test), 'images')
+'''
 # Our submission file will reside in 'submission' variable
 submission = pd.read_csv(path_submission)
 # After choosing image, we will make plot
